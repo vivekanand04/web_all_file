@@ -1,0 +1,12 @@
+ First Unique Character in a String.................5x
+ 1)vector<int> charsMemo(128, 0); creates a vector of integers called charsMemo with 128 elements. Each element in the vector is initialized to 0.
+ 2) arr[A]={6}; array me 65 index pr value 6 store hoga,,agae ye arr vector hota to bhi kaam kar jaata
+3)451 Sort Characters By Frequency....its about priority queue
+1631. Path With Minimum Effort.....priority queue ke andar int nahi vector use karna ,insert karna sikhoge..
+4)there is no any predefined function to find element and delete element in queue;
+  .....so use deque if required and process is given below
+                 deque<int>deq; 
+                auto it = find(deq.begin(), deq.end(), pages[i]);
+                 deq.erase(it);
+
+ 

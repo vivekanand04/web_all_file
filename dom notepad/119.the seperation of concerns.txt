@@ -1,0 +1,10 @@
+document.querySelector("button").classList;//classlist will give all class present inside tag nemed button
+DOMTokenList ['btn', value: 'btn']
+document.querySelector("button").classList.add("invisible"); //add a class named invisible inside button tag
+undefined
+document.querySelector("button").classList.remove("invisible");
+undefined
+document.querySelector("button").classList.toggle("invisible");
+true
+document.querySelector("button").classList.toggle("invisible");//if invisible class is not inside button then it will else     remove
+

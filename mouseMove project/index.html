@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+  
+ 
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+        .leftDiv{
+            width: 300px;
+            height: 100vh;
+            background-color: cadetblue;
+        }
+        .rightDiv{
+            width: 300px;
+            height: 100vh;
+            background-color: cadetblue;
+        }
+       
+        .face{
+            /* width: 600px;
+            height: 550px; */
+            width: 400px;
+            height: 490px;
+            background-color: #fff;
+            width: 50px;  /* Adjust width to desired size */
+  height: 50px; /* Adjust height to desired size */
+  
+            border-radius:50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     box-shadow: rgba(0, 0, 0, .35)0px 5px 15px;
+     margin-left: 400px;
+     margin-top: 100px;
+        }
+        .eyes{
+            width: inherit;
+            /* height: 300px; */
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .eye{
+           /* width: 250px;
+           height: 250px; */
+           width: 160px;
+           height: 160px;
+           background-color: #f3efef;
+           border-radius: 50%;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           box-shadow: rgba(50, 50, 93, .25)0px 50px 100px -20px,rgba(0, 0, 0, .3)0px 30px 60 px -30px;
+           overflow: hidden;
+        }
+   .pupil{
+    /* width: 50px;
+    height: 50px; */
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1)0px 10px 50px;
+   }
+
+   
+    </style>
+
+</head>
+<div class="center-div">
+    <div class="face">
+        <div class="eyes">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let pupils=document.getElementsByClassName("pupil");//here pupils will be like arrray of two object
+    let arrays_pupil=Array.from(pupils);//converting array like object to array object
+  let pupil_start_point=-100;
+  let pupil_range=200;           //width of eyes-width of pupil
+
+
+     //for x 
+     let start_X=0;
+     let end_X=window.innerWidth;
+     let gap_x=end_X-start_X;
+     //for y
+     let start_y=0;
+     let end_y=window.innerHeight;
+     let gap_y=end_y-start_y;
+ const mouseMove=(event)=>{
+        // console.log(`${event.clientX}&${event.clientY}`);
+        
+       
+        //for x
+        let new_x_coordinate=event.clientX-start_X;//distance of x coordinate wrt start point(300);
+        let value2_x=new_x_coordinate/gap_x;  // yha value2 ka value (0,1) karne ke liye gap_between ke jagah kisi aur se bhi divide kar sakte ho
+        console.log("x = "+value2_x);  //dekho cosole log ke andar kaise concatenation kiya
+
+        //for y
+        let new_y_coordinate=event.clientY-start_y;
+        let value2_y=new_y_coordinate/gap_y;  
+        console.log(`y = `+value2_y);       //dekho cosole log ke andar  alag tarika se kaise concatenation kiya
+        let pupil_XCurrentPosition= pupil_start_point+(value2_x*pupil_range);
+        let pupil_YCurrentPosition= pupil_start_point+(value2_y*pupil_range);
+        arrays_pupil.forEach((curpupil)=>{    //aplying of foreach loop on array
+           curpupil.style.transform= `translate(${pupil_XCurrentPosition}px,${pupil_YCurrentPosition}px)`; //change position of pupil wrt current x and y position of curser
+        })
+   
+    }
+    const mouseMove2=(event)=>{   //calling of function for responsive
+        let end_X=window.innerWidth; 
+        let end_y=window.innerHeight;
+        let gap_x=end_X-start_X;
+    }
+
+//method 1
+document.addEventListener("mousemove",mouseMove);
+document.addEventListener("resize",mouseMove2);//adding for resposive karne ke liye agar kisi ne screen ka size change kiya to
+//method 2
+// document.addEventListener("mousemove",function(event){
+   
+//  start_X=300,
+//       end_X=window.innerWidth-180,
+//       gap_x=end_X-start_X,
+//       new_x_coordinate=event.clientX-start_X,//distance of x coordinate wrt start point(300);
+//          value2_x=new_x_coordinate/gap_x,  // yha value2 ka value (0,1) karne ke liye gap_between ke jagah kisi aur se bhi divide kar sakte ho
+//         console.log("x= "+value2_x) ; //dekho cosole log ke andar kaise concatenation kiya
+
+// }
+// );
+
+</script>
+    <body>
+        
+    </body>       
+   
+
+</html>

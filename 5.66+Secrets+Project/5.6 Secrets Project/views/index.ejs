@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lisper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- The "preconnect" keyword for the rel attribute of the element is a hint to browsers that the user is likely to need
+    resources from the target resource's origin, and therefore the browser can likely improve the user experience by preemptively initiating a connection to that origin. -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- The crossorigin attribute, valid on the <audio>, <img>, <link>, <script>, and <video> elements, provides support for CORS, defining how the element handles cross-origin requests.
+  CORS defines a way for client web applications that are loaded in one domain to interact with resources in a different domain.
+  For example, your application may use your browser to pull videos from a video platform API, use fonts from a public font library, or display weather data from a national weather database.APIBy default, when a browser makes a request to a different origin (domain), it does not send credentials like cookies, HTTP authentication, and client-side SSL certificates.
+  The crossorigin attribute is used to specify how the browser should handle these credentials. -->
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+    <!-- This line loads two specific fonts, "Gloria Hallelujah" and "Titan One," from Google Fonts.
+The family parameter specifies which fonts to load, and the display=swap option is used to control how the fonts are displayed while they are being loaded. -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+   <!-- stylesheet tells the browser that the linked resource is a CSS file and should be used to style the webpage. -->
+
+  
+</head>
+
+<body>
+  <h1>What's your secret?</h1>
+  <div class="card">
+    <p>
+      <%= secret %>
+    </p>
+  </div>
+  <p class="user">
+    <%= user %>
+  </p>
+</body>
+
+</html> 

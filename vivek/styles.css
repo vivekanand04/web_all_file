@@ -1,0 +1,505 @@
+/* <1> navigation */
+nav {
+    position: fixed;
+    /* make navigation fixed when scroll down*/
+    background-color: #dadada;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*send right corner,,make space between two row*/
+    align-items: centre;
+    padding: 1px 8vw;
+   border-style: dotted;
+   border-color: #d5d6f8;
+   z-index: 999;  /* cources ke pichhe lane ke liye*/
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+
+ .navigation { 
+    margin: 0 300px;
+} 
+
+
+nav img {
+    margin: 0 100px;
+    width: 100px;
+    cursor: pointer; /*provide cursor on image*/
+}
+/* nav .navigation {
+    display: flex;
+}
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+} */
+/* make navigation in one row  */
+nav .navigation ul {
+    display: flex;/* make navigation in one row ,1st method to make input in same row */
+    justify-content: flex-end; /* flex-end because  we want navigation in right end of page*/
+    align-items: centre;
+}
+
+/* remove boolet point from navigation  */
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+    /*space between   navigation*/
+}
+
+/* remove underline from navigation  */
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(red, green, blue);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* hover effect on  navigation  */
+nav .navigation ul li a:hover {
+    color: red;
+    /*color will change fast*/
+    transition: 0.3s ease;
+    /*color will change after 0.3 second */
+}
+
+.image {
+    border-radius: 50%;
+    width: 40px;
+}
+
+
+/* home */
+
+
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/back.jpg") ;
+    /*yha first wala ka kaam sirf image ke color ko deep karna hai,,
+                                                                                                          but height of image will be same as height of text*/
+
+    height: 100vh;
+    /*make height of 100vh */
+
+    /* image ko centre me krna hai*/
+    background-size: cover;
+    background-position: center;
+    /* make gyan ka text  in center*/
+    display: flex;
+    /*doubt~~~~~~~~~~~~~~~*/
+    flex-direction: column;
+    /*doubt~~~~~~~~~~~~~~~*/
+    justify-content: center;
+    /*make at center if we go lef to right*/
+    align-items: center;
+    /*make at center if we go up to down*/
+    text-align: center;
+    /* agar p tag wala text center me nahi gya to*/
+}
+
+.man{
+    justify-content: center;
+    display: flex;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    padding-bottom: 20px;
+    color: #f5ebeb;
+    width: 40%;
+    font-weight: 700;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+#home a{
+    text-decoration: none;    /* underline htane e liye*/ 
+    font-size: .9rem;
+padding:13px 25px;
+background-color: #fff;
+font-weight: 600;
+border-radius: 5px;      /*box ka corner htane ke liye*/  
+}
+#home .btn{
+    margin-top:30px ;}
+
+/* for blue class*/
+
+#home a.blue
+{   margin: 0 10px;
+    color: #fff;
+    background:rgb(21,21,100);
+}
+#home a.blue:hover{
+    color:rgb(21,21,100);;
+    background-color:#fff ;
+    transition: .3s;
+}
+
+/*for yellow class*/
+
+#home a.yellow
+{
+    color: #fff;
+    background: #f5d57d;;
+}
+#home a.yellow:hover{
+    color:#fdc938;
+    background-color:#fff ;
+
+    transition: .3s;
+}
+
+/*feature*/
+
+#features{
+    padding:5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features .fea-box{
+    background-color: rgb(243, 241, 241);
+    text-align: start;     /*to make content at start*/
+   padding: 0 50px;}
+#features h1{
+    font-size: 2rem;
+    color: #242551;
+}
+#features p{
+    font-weight: 700;
+    color:rgb(34, 34, 85) ;
+}
+/* .fea{
+    background-color: #1a1a4d;
+   
+    text-align: center; width: 70%;
+} */
+#features .fea-box i{
+    padding-top: 10px;
+
+    font-size: 1.5rem;
+    color: rgb(44,44,80);
+    
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgb(34, 34, 85);
+    padding: 0 0 3px 0 ;
+}
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 530;
+    color: rgb(123, 123, 125);
+    width: 90%;
+    padding-bottom: 2px;
+/* margin: 2px; */
+}
+#features .fea-base{
+    /* 2nd method to make input in same row*/
+    display: grid;                 /* doubt*/
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));                    /* doubt*/
+    grid-gap: 1rem;     /* distance beetween two cards*/
+    margin-top: 50px;
+}
+/*Cources*/
+#cource{
+    padding: 8vw 8vw 3vw 8vw;
+    text-align: center;   /* all text inside  id cources will come to center*/
+   
+}
+#cource .cources{
+    text-align: start;       /* text start me aa jayega*/
+    background-color: #f9f9f9ff;
+    height: 100%;
+    position: relative;         /* doubt 49:40*/
+}
+#cource h1{
+    font-size: 1.7rem;
+    color: #242551;
+}
+#cource p{
+    font-weight: 700;
+    color:rgb(34, 34, 85) ;
+}
+#cource .cource-box{
+    display: grid;                 /* doubt*/
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));                    /* doubt*/
+    grid-gap: 1rem;     /* distance beetween two cards*/
+    margin-top: 50px;
+}
+#cource .cources img{
+    width: 100%;
+    height: 60%;
+     background-size: cover;          /* doubt  45:25 */
+   background-position: center;              /* doubt   45:25*/
+}
+#cource .cources .details{
+    padding: 15px 15px 0 15px;
+   
+}
+#cource .cources .details span{
+    color: #919194;
+}
+#cource .cources .details i{
+    color: #fdc938;
+    font-style: 9rem;
+}
+#cource .cources .cost{
+    background-color: rgb(74,74,136);
+    color: #fff;
+    line-height: 50px;    /* distance between two line*/
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    border-radius: 50%;
+    position:absolute;         /* doubt 49:40*/
+    right:15px;          /* isla position: relative ko  #cource .cources me rakha hai */
+     bottom: 130px;
+}
+
+/* registration */
+
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5),rgba(81,91,223,.5)),url("images/signup.jpg") ;/*yha first wala ka kaam sirf image ke color ko deep karna hai,,
+                                                                               but height of image will be same as height of text*/ 
+
+  background-color: black;                                                                             
+background-position: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+display: flex;   /* make both div in one column */
+justify-content: center;   /* send second div to right side me le jayega and remain same height as first div*/
+align-items: center;   /* text ko center me layega */
+}
+
+#registration .reminder{
+    color: #fff;
+    /* margin-right: 500PX; */
+}
+#registration .reminder .time{
+    display: flex;     /* make all content in one row*/
+    margin-top: 40px;
+
+}
+#registration .reminder .time .date{
+    text-align: center;      /* ~~~~~doubt isake karan text center me kyu nahi gaya*/
+    padding: 13px 33px;
+    background-color: rgba(255,255,255,.25);
+    backdrop-filter:blur(4px);      /* ~~~~ doubt iska use*/
+    box-shadow: 0 8px 32px 0 rgba(31,38,135 ,.37);    /* ~~~~ doubt iska use*/
+    border-radius: 10px;    /* to make the corner of box curve*/
+    margin: 0 5px 10px 5px; /*  ~~~~ iska yha pe kya use hai*/
+    border: 1px solid rgba(255,255,255,.18);  /* make border of box 1px width*/
+   font-size: 1.1rem;
+   font-weight: 600;
+    
+} 
+#registration .form{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;            /* make all content in one row*/
+    flex-direction: column;   /* make all content in one column*/
+    padding: 40px ;               /*  ~~~~ iska yha pe kya use hai*/
+    box-shadow: 0 8px 32px 0 rgba(31,38,135 ,.37);
+}
+#registration .form input{
+  margin: 15px 0;        /*  ~~~~ iska yha pe kya use hai*/
+  padding: 11px 10px;     /*  ~~~~ iska yha pe kya use hai*/
+  
+  border: 1px solid rgb(84,40,241);
+  outline: none;      /*  ~~~~ iska yha pe kya use hai*/
+
+}
+
+#registration .form a.yellow
+{     text-decoration: none;    /* underline htane e liye*/ 
+    font-size: .9rem;
+padding:13px 15px;
+background-color: #fff;
+font-weight: 600;
+border-radius: 5px;      /*box ka corner htane ke liye*/
+    color: #fff;
+    background: #fdc938;;
+}
+#registration .form a.yellow:hover{
+    color:#fdc938;
+    background-color:#fff ;
+
+    transition: .3s;
+}
+#registration .form .btn{
+    margin-top: 20px;
+}
+#registration .form input::placeholder{
+    color:#413c3c;   /* change the color of name email etc*/
+font-weight: 500;
+font-size: .9rem;
+}
+
+
+/* experts*/
+
+#experts{
+    padding: 8vw 8vw 3vw 8vw;
+    text-align: center;  /* text ke sath sath photo ko bhi center me kar dega,,,lekin aisa kyu sirf text center me jana chahiye na*/
+}
+#experts .expert-box{
+   /* niche ke do ka kaam hai expert-box ke andar jitna bhi div hai sab ko ek row me lana hai*/
+        display: grid;                 
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));                    
+        grid-gap: 1rem;     /* distance beetween two cards*/
+        margin-top: 50px;
+    }
+    #experts .expert-box .profile{
+        background-color: #fafaf1;    /* 2 cards ke bich color nahi hota hai*/
+        padding: 30px 10px;
+
+    }
+    .pro-link{
+       margin-top: 10px;
+    }
+    .pro-link i {
+ padding: 10px 13px;
+ border: 1px solid rgba(21,21,21,100);
+ cursor: pointer;
+ transition: 0.5s;
+    }  
+    .pro-link i:hover{
+        background: rgba(21,21,21,100) ;
+        color: #fff;
+        border: 1px solid rgba(21,21,21,100);
+ cursor: pointer;
+    }  
+.karo{
+    color: #858282;
+} 
+
+
+/* footer */
+
+footer{
+    padding: 8vw;
+    background-color: #3d3d43;
+    display: flex;
+    justify-content: space-between;/* ye right corner me nahi bhejata hai ,,ye 2 cards ke bich me space deta hai,,,pr ipar me ye right corner me bhejane ka kaam kiya tha*/
+  align-items: flex-start;   /*  !~~~~doubt*/
+flex-wrap: wrap;     /* ~~~doubt*/
+
+}
+footer .footer-col{
+    padding: 30px;
+}
+footer h3{
+    color: rgb(241,240,245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.foot{
+    color: #e8e8ef;
+}
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+footer li:hover{
+    color: rgb(241,240,245);
+
+}
+footer p{
+    color:#7b838a ;
+}
+footer .subscribe{
+    margin-top: 20px;
+
+}
+footer input{
+    width: 180px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+footer .subscribe a{
+    text-decoration: none;    /* underline htane e liye*/ 
+    font-size: .9rem;
+padding: 12px 15px;
+background-color: #fff;
+font-weight: 600;
+border-radius: 5px;      /*box ka corner htane ke liye*/  
+}
+footer .subscribe a.yellow
+{
+    color: #fff;
+    background: #fdc938;;
+}
+footer .subscribe a.yellow:hover{
+    color:#fdc938;
+    background-color:#fff ;
+
+    transition: .3s;
+}
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;   /* ~~~~~iska kya kaam hai*/
+    align-items: center;    /*~~~~~ iska kya kaam hai*/
+width: 100%;
+flex-wrap: wrap;        /*~~~~~ iska kya kaam hai*/
+}
+footer .copyright .pro-links{
+    padding-top: 0px;
+ }
+ footer .copyright p{
+    color: #fff;}
+ 
+footer .copyright .pro-links i {
+background-color: #5f7185;
+padding: 6px 0 0 6px;
+color: #fff;
+width: 25px;
+height: 25px;
+
+ }  
+
+ footer .copyright .pro-links i:hover{
+    background-color: #fdc938;
+    color: #2c2c2c;
+ }  
+
+@media (max-width:763px)
+{
+nav img{
+    width: 1300px;
+}
+
+#features{
+    padding: 8vw 4vw 0 8vw;
+    text-align: center;
+}
+#home{
+    -left: 80px;
+}
+}
+
+
+
+
+
+
+
+/* SCRAP NOTES */
+
+/* 1) 4 METHOD TO MAKE input IN SAME ROW */

@@ -1,0 +1,10 @@
+document.querySelector("button").classList;
+DOMTokenList ['btn', value: 'btn']
+document.querySelector("button").classList.add("invisible");
+undefined
+document.querySelector("button").classList.remove("invisible");
+undefined
+document.querySelector("button").classList.toggle("invisible");
+true
+document.querySelector("button").classList.toggle("invisible");
+false

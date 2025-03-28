@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+  
+<body>
+  
+  <!-- Write your code here -->
+ <% if(locals.count){%>              //yaha pe hamne count ka use kiya hai jo index.ejs me define nahi hai and na hi get method ne isko return 
+  kiya hai thats why we used locals keyword.
+    <h1> the number of letter is<%=count%></h1>
+  <%} else{%>
+    <h1>fill the form below</h1>
+  <%}%>
+
+  <h1>Enter your name below</h1>  
+  <form action="/submit" method="POST">
+    <input type="text" name="fName" placeholder="First name">
+    <input type="text" name="lName" placeholder="Last name">
+    <input type="submit" value="OK">
+  </form>
+  
+  
+</body>
+
+</html>

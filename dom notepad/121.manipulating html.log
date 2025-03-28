@@ -1,0 +1,12 @@
+
+.document.querySelector("a").attributes   //attributes keyword is used to print all attributes inside a tag named a etc
+NamedNodeMap {0: href, href: href, length: 1}
+
+
+.document.querySelector("a").getAttribute("href"); //it will return data reletd to attributes href
+'https://www.google.com'
+
+.document.querySelector("a").setAttribute("href","https://ww.bing.com"); //used to replace data related to href with some 
+                                                     other data
+
+  

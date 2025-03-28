@@ -1,0 +1,63 @@
+2073. Time Needed to Buy Tickets..................array
+75. Sort Colors....................array
+2442. Count Number of Distinct Integers After Reverse Operations
+
+2390. Removing Stars From a String..........pahla method me error aa rah hai,,,dusra method  sahi hai
+
+1190. Reverse Substrings Between Each Pair of Parentheses.......
+ int n=s.size();
+       for(int i=0;i<n;i++).............yaha pe agar ye likhofe to galat aata hai kyu
+                                                 int n=s.size()-1;
+                                                 for(int i=0;i<=n;i++)
+2352. Equal Row and Column Pairs......... doubt hai isame
+2685. Count the Number of Complete Components....ye ban gaya hai but code me doubt hai
+	
+Number of Provinces........dono method exactly same hai phir bhi run nahi ho rah hai
+
+
+Evaluate Division......solve this for learn about shortest path of graph
+1314. Matrix Block Sum......code to youtube se copy kar diya hai par samjha nahhi hai
+1382. Balance a Binary Search Tree......code to youtube se copy kar diya hai par samjha                        nahhi hai
+449. Serialize and Deserialize BST...........youtube se dekhkar kiya par jo code likha hai wo run nahi ho raha hai
+378. Kth Smallest Element in a Sorted Matrix....KHUD KA CODE KIYA HAI JO RUN NAHI HUA
+22. Generate Parentheses...bhai isame to sirf ek hi pair banega baki ka kya
+11) ye kaisa node ko define kiya gaya hai
+/*
+// Definition for a QuadTree node.
+class Node {
+public:
+    bool val;
+    bool isLeaf;
+    Node* topLeft;
+    Node* topRight;
+    Node* bottomLeft;
+    Node* bottomRight;
+    
+    Node() {
+        val = false;
+        isLeaf = false;
+        topLeft = NULL;
+        topRight = NULL;
+        bottomLeft = NULL;
+        bottomRight = NULL;
+    }
+    
+    Node(bool _val, bool _isLeaf) {
+        val = _val;
+        isLeaf = _isLeaf;
+        topLeft = NULL;
+        topRight = NULL;
+        bottomLeft = NULL;
+        bottomRight = NULL;
+    }
+    
+    Node(bool _val, bool _isLeaf, Node* _topLeft, Node* _topRight, Node* _bottomLeft, Node* _bottomRight) {
+        val = _val;
+        isLeaf = _isLeaf;
+        topLeft = _topLeft;
+        topRight = _topRight;
+        bottomLeft = _bottomLeft;
+        bottomRight = _bottomRight;
+    }
+};
+*/

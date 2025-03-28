@@ -1,0 +1,13 @@
+
+.document.querySelector(".btn");
+<button class=​"btn">​Click Me​</button>​
+
+.document.querySelector(".btn").style.backgroundColor="brown";
+'brown'
+
+.document.querySelector(".btn").style.fontSize="1.2rem";
+'1.2rem'
+
+.document.querySelector(".btn").style.padding="3%";//right side me jo bhi ayega wo string ke rup me rahega bcz it is 
+                                      javascript not css 
+

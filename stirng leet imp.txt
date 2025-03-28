@@ -1,0 +1,85 @@
+1678. Goal Parser Interpretation......................imp
+sting s;
+s+='g';      character bhi add ho gaya
+s+="oal";     string bhi add ho gaya
+cout<<s;
+ans: goal;
+
+
+1) character to integer convesion
+.....  int c=a;          
+	cout <<c;
+        ans:: a is not defined error...  
+.....  int c='a';          
+	cout <<c;
+        ans:: 1 
+ ..... cout <<'a'-'b'; 
+     ans::-1   
+........cout<<'a';
+    ans:: a   //yha pe 1 nahi aya yahi sikhna hai     
+........cout<<"a";
+    ans:: a   
+2) string to integer conversion (stoi) or (atoi)
+
+   ..... string s="123";
+        cout<<stoi(s);
+       ans:: 123;
+ ..... string s="123abc";
+        cout<<stoi(s);
+       ans:: 123;
+.......string s="abc";
+       cout<<stoi(s);
+       ans:: error....  but here atoi use karne par 0 answer aata
+3)integer to string
+   ....  int number = 12;
+    string str = to_string(number);
+    cout << stirng form of 12 is<< str << std::endl;
+   cout << first element is<< str[0] << std::endl;
+   ans::::   stirng form of 12 is 12
+          first element is 1
+4)method to insert element in string
+     string ans="";
+     ans=ans+'a';
+     ans+='b';
+    after run ans will be ab
+ 5) string ans=" ";
+      ans=ans+'b';
+       ans=ans+'c';
+     after run ans will be bc
+   //method 2
+      string ans=" ";
+      ans=ans+'b';
+       ans='c'+ans;
+     after run ans will be cb .......//becaose ans baad me add hua hai
+6) access elemrnt of string without using ASCCI value
+    string s="a1bb33s';
+    if(s[i]>='1'&&s[i]<='9')
+   cout<< "integer hai ye";
+7)access using ASCII
+  string s="2gfsjh464287";
+ if(s[i]>=48&&s[i]<=56)
+cout<<"inter hi";
+8)......Erase a string by assigning an empty string to it
+    string myString = "Hello, world!";
+    myString = ""; 
+9) .....change  google.com 9000 into string
+      string str= to_string(google.com+" "+9000); 
+ans:  "google.com 9000" 
+10)....combining two string  
+string st=mp[id].first+"-"+stationName;
+  mp[st]=5;
+10)  leetcode question: 51. N-Queens
+    a)   vector<string>vec1(n);
+        string s(n,'.');
+        for(int i=0;i<n;i++)  vec1[i]=(s);
+       ans:  for loop{
+          cout<< vec1[i][j];
+         cout<< vec1[i];//valid
+   b)   vector<string>vec1(n);
+        string s(n,'.');
+        for(int i=0;i<n;i++)  vec1.push_back(s);
+        ans:  for loop{
+          cout<< vec1[i];//invalid
+              cout<< vec1[i][j];//invalid
+11)convert a char into string 
+     string str=string(1,'a');

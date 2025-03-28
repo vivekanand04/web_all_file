@@ -1,0 +1,21 @@
+               A)string
+1)...append function
+  case 1:str1.append(str2); 
+case 2: str.append("GeeksforGeeks"); 
+.......???? optt...a) str1.append(str2, 0, 5); 
+                   b) str.append("GeeksforGeeks", 5); 
+2)begin() ..return iterator,not index, of first elment 
+case1:str.begin()
+ case2:string str="Hello";  
+    cout<<*str.begin();  ans... H
+3)end() ..return iterator,not index, of next element of last elment  
+case1:str.end()
+ case2:string str="Hello";
+       iterator itr=str.end() ; 
+    cout<<*(itr-1);  ans... o
+4)insert()  ...insert string at particular index
+case 1:str1.insert(6, str2);..insert  whole str2 in str1 from index 6,
+5)clear().... delete all element of string 
+string str="hellow";
+   str.clear();      ans: " "
+

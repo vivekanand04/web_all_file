@@ -1,0 +1,10 @@
+682. Baseball Game
+stoi is used to change string element into integer
+ int s=accumulate(v.begin(),v.end())
+ here s will be sum of all element of vector
+2)  
+deque<int>deq;
+  deq.push_back(11);
+deq.push_back(33);
+cout<<deq[0]              ans=11;  //dekha deque ko array ki tarah use kar liya
+  

@@ -1,0 +1,74 @@
+   
+// .................1)select using tag..........
+
+.document.getElementsByTagName("li");   ///here Elements not element so it will return aray of tag li
+HTMLCollection(3) [li.list, li.list, li.list]0: li.list1: li.list2: li.listlength: 3[[Prototype]]: HTMLCollection
+
+.document.getElementsByTagName("li").style.color="red"  //.......here style color is not working bcz .document.getElementsByTagName("li") will return a array
+VM651:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:48
+(anonymous) @ VM651:1
+
+.document.getElementsByTagName("li")[2].style.color="green"
+'green'
+
+.document.getElementsByTagName("li").length;
+3
+
+
+.........................select  by className............
+
+
+.document.getElementsByClassName("list");
+HTMLCollection(3) [li.list, li.list, li.list]
+
+.document.getElementsByClassName("list").style.color="purple";
+VM875:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:52
+(anonymous) @ VM875:1
+
+.document.getElementsByClassName("list")[2].style.color="purple";
+'purple'
+
+
+.................select by id............
+document.getElementById("texti");   //here we used element not elements so it will return only one element not array of element
+<h1 id=​"texti">​Hello​</h1>​
+document.getElementById("texti").style.color="yellow"; 
+'yellow'
+
+document.getElementById("texti").innerHTML="hellow world"; 
+'hellow world'
+
+ ........... select by queryselector.........querySlector() also return only one element not aray of element
+
+.document.querySelector("#texti");        
+<h1 id=​"texti" style=​"color:​ yellow;​">​hellow world​</h1>​
+
+.document.querySelector("h1");
+<h1 id=​"texti" style=​"color:​ yellow;​">​hellow world​</h1>​
+
+.document.querySelector(".btn");
+<button class=​"btn">​Click Me​</button>​
+.
+document.querySelector("a");
+<a href=​"https:​/​/​www.google.com">​Google​</a>​
+
+.document.querySelector(" li a");
+<a href=​"https:​/​/​www.google.com">​Google​</a>​
+.
+document.querySelector(".list a");
+<a href=​"https:​/​/​www.google.com">​Google​</a>​
+
+.document.querySelector("#item a")
+<a href=​"https:​/​/​www.google.com">​Google​</a>​
+
+document.querySelector("#item .list")  //here it will return only first item out of 3 so we will use querySelectorAll 
+<li class=​"list" style=​"color:​ red;​">​…​</li>​::marker​<a href=​"https:​/​/​www.google.com">​Google​</a>​</li>​
+
+
+..........queryselectorAll...........
+document.querySelectorAll("#item .list") //it will return all 3 element satisfying this
+NodeList(3) [li.list, li.list, li.list]0: 
+
+

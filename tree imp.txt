@@ -1,0 +1,1 @@
+1)in BST insertion is always done in last....if not believe go and take an example

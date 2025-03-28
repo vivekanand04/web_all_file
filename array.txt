@@ -1,0 +1,18 @@
+11. Container With Most Water..................5x
+1672. Richest Customer Wealth................imp
+ find row and column ka length???????
+vector<vector < int > > matrix;
+Row's Length: matrix.size();
+Column's Length: matrix[0].size();
+
+......................medium..............
+16. 3Sum Closest...............5x
+sort(nums.begin(),nums.end());    .... method to sort vector
+imp)??????
+ vector<vector<int>>ans(n,vector<int>(m,0));
+aisa tab declare karte hai 2d vector ko jab hame koi index pe insert karne ki jarurat hota hai ... 
+for example  ans[i][j]=5;
+here we can use push_back(5) also 
+   CASE 2:: vector<vector<int>>ans;
+1)vector<int> charsMemo(128, 0); creates a vector of integers called charsMemo with 128 elements. Each element in the vector is initialized to 0.
+2) arr[A]={6}; array me 65 index pr value 6 store hoga,,agae ye arr vector hota to bhi kaam kar jaata

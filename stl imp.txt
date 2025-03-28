@@ -1,0 +1,12 @@
+1)unordered_map<int,pair<string,int>>mp;
+ mp[2]={hilsa,43}; ..dekho is prakar insert hua hai..curly bracket isliye nahi hai ki waha pair hai par isliye hai ki waha par 2 elment ek sath insert kar rahe hai
+..mp[id].first=???
+ans: hilsa
+..mp[id].second=???
+ans: 43
+..erasing: mp.erase(2)
+..value=(double)mp2[st2].first/mp2[st2].second;..yha dekho double me value ke liye kaise double ko hi bracket me band kar diya
+2)...map<int,map<string,int>>mp;
+ for insertion and access of this double type map is in following question
+      1418. Display Table of Food Orders in a Restaurant
+3)....

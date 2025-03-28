@@ -1,0 +1,21 @@
+1)..... unordered_map<char, int> mpp ;
+      if(mpp['a'] && mpp['b']{
+	  count++; }
+matlab ham map me character 'a' hai ya nahi aise ham pta kar sakte hai	  
+            
+ 2)  default value of map is 0
+           map<int,int>mp;
+           cout<<mp[4];
+           ans:  0   
+3.)a.) The time complexity for searching elements in std::map is O(log n). 
+   b.) unordered_map best case and average case time complexity for searching is O(1) because elements are stored in a Hash table and therefore the key acts as an index while searching in unordered maps.
+ But the worst-case time complexity for searching is O(N).  
+ hint: if all elements are hashed to the same bucket, the complexity becomes linear in the size of the map, because the new element needs to be inserted into a bucket that already contains ( n ) elements, making it necessary to traverse through all of them.  
+4)   map<char,int>mp;
+    case 1: mp[a]++;
+    cout<<mp[a]   ......ans=1;  //1 se increment ho gaya
+ case 2:  now khuraphati karte hai
+   mp[a]--;
+   cout<<mp[a];   ......ans=0;
+   mp[a]--;
+  cout<<mp[a];   ......ans=-1;

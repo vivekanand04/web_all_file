@@ -1,0 +1,62 @@
+1)......
+1672. Richest Customer Wealth
+ find row and column ka length???????
+vector<vector < int > > matrix;
+Row's Length: matrix.size();
+Column's Length: matrix[0].size();
+2)..... 
+vector<int>vec;
+  vec.push_back(2);
+   vec.push_back(3);
+    vec.push_back(4);
+
+cout<<"size of vector vec is"<<vec.size()<<endl;
+3)..... delete element of given undex in vector
+ temp.erase(temp.begin()+i);//delete ith element in temp
+4) auto itr=find(ans.begin(),ans.end(),num);...find iterator of a number
+5) ...string temp=bitset<16>(k).to_string();  change a decimal number num into binary number in 16 bit.result will be in string form like "1001";
+6)....temp.substr(16-n,n);  cut element from 16-n to n 
+7)....sort(nums.begin(), nums.end()) takes O(n log n) time, 
+8) 2D vector
+...1) initilize 2d vector having no size ddecided
+      vector<vector<int>>ans;
+    2) initialise 2 d  vector having size m,n
+     vector<vector<int>>ans(n,vector<int>(m));
+    3)
+
+9) insert dher sara element in 1 D vector
+ vector<int> vec1 = {nums[i], nums[j], nums[k], nums[l]};
+10)  case 1:  vector<vector<bool>>arr(10,vector<bool>(11));
+              int col=arr[0].size();  we can find col size by using this;
+     case 2: boll arr[101][101];
+              int col=arr[0].size();  //cant find col size by using this
+11.) comparator function 
+case 1: for array 
+static bool cmp(int val1,int val2){     for array here static add kiya hai,vector me nahi
+  if(val>val2)return true;
+      return false;
+  }
+sort(arr,arr+n,cmp);   //dekho array ka sorting kaise hota hai, vector ke liye yaha par 
+                  sort(arr.begin(),arr.end(),cmp) likhna 
+12.) case 1:  int hash[deadd + 1] = {-1}; //The array is intended to be initialized with    deadd + 1 elements, all set to -1. However, int hash[deadd + 1] = {-1}; initializes only the first element to -1 and all others to 0.
+case 2:  vector<int> hash(deadd + 1, -1);// The vector is initialized with deadd + 1                             elements, each set to -1.
+13).... case 1: wrong way 
+    vector<int>vec1();
+   vec1[ind]=temp->val;
+
+....case 2: correct way
+    vector<int>vec1(n);
+    vec1[ind]=temp->val;  
+// reason: first will give error because yaha vector me index use karke element push kar rahe hai so declare size of vector
+14)use of push_back
+    case 1: 1 D vector     vector<int >ans;//no size at initialization.it will resize itself
+   case 2:2 d vector    vector<vector<int>>ans;  //error because there is lots of 1 d vector stacking one one another like books so we have to initialize those all 1 D vector
+   so correct one : vector<vector<int>>ans(n)  
+case 3: vector<vector<int>>ans(n,vector<int>(n)) //ye pahle se hi har row (each 1 d vector)me n zero insert kar dega so push_back karne par n zero ke baad hi value push hoga so for this case use iteration and ans[i][j]   to insert in pplace of push_back;
+case 4: vector<int >ans(n); //isme bhi pahle se n zero insert ho jayega so use iteration ans ans[i] to insert value in place of pudh_back.
+15)........ ListNode *head1=head;
+         cout<<head<<" "<<head1<<" ";
+        delete head1;
+        cout<<head;
+       ans=>   0x502000000050 0x502000000050 0x502000000050  ..all will print same value because head1 got deleted not head;
+
